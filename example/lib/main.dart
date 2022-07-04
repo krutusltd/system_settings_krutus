@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
+import 'package:system_settings_krutus/constants.dart';
 import 'package:system_settings_krutus/system_settings_krutus.dart';
 
 void main() {
@@ -52,6 +53,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          onPressed: () async {
+            SystemSettingsKrutus().openSettings(
+              AndroidSettingsConstant.mainSettings,
+            );
+          },
+        ),
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),

@@ -17,3 +17,18 @@ Next, import the package into your dart code:
 ```dart
 import 'package:system_settings_krutus/system_settings_krutus.dart';
 ```
+
+## Example
+
+Here is the example:
+
+```dart
+SystemSettingsKrutus().openSettings(
+  AndroidSettingsConstant.mainSettings,
+)
+```
+
+## Bugs and feature requests
+
+Have a bug or a feature request? Please first search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/krutusltd/system_settings_krutus/issues).
+
